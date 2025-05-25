@@ -1,4 +1,4 @@
-name: CI for Selenium Cucumber JUnit Project - Fatima BEN AMOR
+name: CI for Selenium Cucumber JUnit Project -Fatima BEN AMOR
 
 on:
   push:
