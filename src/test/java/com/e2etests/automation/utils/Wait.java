@@ -11,7 +11,6 @@ import java.time.Duration;
 import java.util.List;
 
 /**
-@Ghada TRABELSI
  * Class Wait.
  */
 public class Wait {

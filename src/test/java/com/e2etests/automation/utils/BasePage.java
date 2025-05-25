@@ -4,7 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
-@Ghada Trabelsi
  * This class contains the declaration of the driver. and contains the
  * declaration of the logger.
  */

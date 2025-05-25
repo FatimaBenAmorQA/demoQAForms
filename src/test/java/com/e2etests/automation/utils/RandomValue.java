@@ -15,7 +15,6 @@ public class RandomValue {
 		return sb.toString();
 	}
 	/**
-@Ghada TRABELSI
 	 * Generate random emails with Selenium .
 	 *
 	 */

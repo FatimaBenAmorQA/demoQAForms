@@ -29,12 +29,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-/**
-@Ghada TRABELSI
- * This class contains all the methods required by selenium to perform actions
- * on webelement. It is a repository so that same code need not to be written
- * again.
- */
+
 public class SeleniumUtils extends BasePage {
 
 	/** properties. */
