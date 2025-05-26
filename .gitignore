@@ -1,0 +1,37 @@
+CONTENTS OF .gitignore FILE:
+ 
+ 
+*target*
+*.jar
+*.war
+*.ear
+*.class
+ 
+# eclipse specific git ignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+ 
+# External tool builders
+.externalToolBuilders/
+ 
+# Locally stored "Eclipse launch configurations"
+*.launch
+ 
+fonctionner gitignore
+ 
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+git push -f origin master
