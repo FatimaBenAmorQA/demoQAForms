@@ -16,13 +16,14 @@ Background: L utilisateur accède à la page Book Store Application
     
     @RemplirLeFormulaireStudentRegistrationForm
     Scenario: L utilisateur remplit correctement le formulaire d inscription étudiant
-    Given L utilisateur est sur la page Student Registration Form
     When Il saisit le nom dans le champ First Name
     And Il saisit le prenom dans le champ Last Name
     And Il saisit l email  dans le champ Email
     And Il sélectionne son genre 
     And Il saisit le mobile
-    And Il sélectionne la date de naissance 
+    And Il sélectionne le mois de naissance 
+    And Il sélectionne l annéé de naissance
+    And Il sélectionne le jour de naissance
     And Il saisit la section dans le champ Subjects
     And Il coche ses hobbies 
     And Il ajoute une image au champ Picture

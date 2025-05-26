@@ -98,16 +98,36 @@ public class PracticeFormStepDefinition {
 				practiceFormPage.OptionOther);
 		seleniumUtils.clickRadioByLabelText("Male", genderOptions);
 	}
-/**
- * la prochaine fois
- */
+
+	/**
+	 * la prochaine fois
+	 */
 	@When("Il saisit le mobile")
 	public void ilSaisitLeMobile() {
+		seleniumUtils.writeText(practiceFormPage.userNumber, configFileReader.getProperties("demoqa.mobile"));
+	}
+
+	@When("Il clique sur le calendrier")
+	public void ilCliqueSurLeCalendrier() throws InterruptedException {
+		seleniumUtils.click(practiceFormPage.dateOfBirthInput);
+		Long mediumWait = seleniumUtils.getWait("MediumWait");
+		Thread.sleep(mediumWait);
+	}
+
+	@When("Il sélectionne le mois de naissance")
+	public void ilSélectionneLeMoisDeNaissance() throws InterruptedException {
+
+		seleniumUtils.selectMonthByVisibleText(practiceFormPage.mois, "March");
+		
+	}
+
+	@When("Il sélectionne l annéé de naissance")
+	public void ilSélectionneLAnnééDeNaissance() {
 
 	}
 
-	@When("Il sélectionne la date de naissance")
-	public void ilSélectionneLaDateDeNaissance() {
+	@When("Il sélectionne le jour de naissance")
+	public void ilSélectionneLeJourDeNaissance() {
 
 	}
 

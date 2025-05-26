@@ -81,6 +81,9 @@ public class PracticeFormPage {
 	public WebElement selectCity;
 	
 	
+	@FindBy(how = How.XPATH, using = "//select[contains(@class, 'react-datepicker__month-select')]")
+	public WebElement mois;
+	
 	public PracticeFormPage() {
 		PageFactory.initElements(Setup.driver, this);
 	}

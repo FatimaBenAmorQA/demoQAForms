@@ -21,7 +21,10 @@ Background: L utilisateur accède à la page Book Store Application
     And Il saisit l email  dans le champ Email
     And Il sélectionne son genre 
     And Il saisit le mobile
-    And Il sélectionne la date de naissance 
+    And Il clique sur le calendrier
+    And Il sélectionne le mois de naissance 
+    And Il sélectionne l annéé de naissance
+    And Il sélectionne le jour de naissance
     And Il saisit la section dans le champ Subjects
     And Il coche ses hobbies 
     And Il ajoute une image au champ Picture

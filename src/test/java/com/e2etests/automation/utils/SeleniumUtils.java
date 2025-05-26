@@ -27,6 +27,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
@@ -657,6 +658,13 @@ s	 * @param locatorTpye String locators
 		}
 
 
-		
+		/**
+		 * Méthode 1 : pour un <select> HTML natif (avec classe Select de Selenium)
+		 */
+		public void selectMonthByVisibleText(WebElement dropdownElement, String month) {
+		    Select select = new Select(dropdownElement);
+		    select.selectByVisibleText(month);
+		}
+
 		
 	}
